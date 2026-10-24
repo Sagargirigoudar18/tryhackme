@@ -1,0 +1,19 @@
+# Nmap 7.99 scan initiated Sat Oct 24 02:25:34 2026 as: /usr/lib/nmap/nmap --privileged -sC -sT -sV -oN nmap2.txt 10.48.133.205
+Nmap scan report for 10.48.133.205
+Host is up (0.10s latency).
+Not shown: 995 closed tcp ports (conn-refused)
+PORT     STATE    SERVICE     VERSION
+22/tcp   open     ssh         OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 7c:47:af:b5:c7:04:5f:f7:95:6c:f2:b4:ba:89:6e:d0 (RSA)
+|   256 23:e9:2d:b3:20:ee:eb:43:7f:e5:98:4e:34:57:25:58 (ECDSA)
+|_  256 e9:e1:a7:b7:6a:f8:f0:91:f1:76:97:8e:1f:78:1d:58 (ED25519)
+80/tcp   open     http        Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+|_http-title: Overpass
+987/tcp  filtered unknown
+1079/tcp filtered asprovatalk
+5730/tcp filtered unieng
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Oct 24 02:26:05 2026 -- 1 IP address (1 host up) scanned in 31.11 seconds
